@@ -1,9 +1,10 @@
 {
   "name": "carbon-cli",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "yarn build:clean && yarn build:compile",
+    "build:compile": "tsc",
+    "build:clean": "rm -rf ./dist/"
   },
   "description": "Personal template for writing Node CLI projects in Typescript.",
   "repository": "nictar/carbon",
@@ -16,6 +17,7 @@
     "nodejs"
   ],
   "devDependencies": {
-    "prettier": "2.2.1"
+    "prettier": "2.2.1",
+    "typescript": "^4.2.4"
   }
 }
