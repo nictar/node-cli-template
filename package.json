@@ -17,7 +17,20 @@
     "nodejs"
   ],
   "devDependencies": {
+    "import-sort-cli": "^6.0.0",
+    "import-sort-parser-typescript": "^6.0.0",
+    "import-sort-style-rn": "^1.1.6",
     "prettier": "2.2.1",
     "typescript": "^4.2.4"
+  },
+  "importSort": {
+    ".js": {
+      "parser": "babylon",
+      "style": "rn"
+    },
+    ".ts": {
+      "parser": "typescript",
+      "style": "rn"
+    }
   }
 }
