@@ -3,6 +3,7 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
     "lib": ["es7", "DOM"],
     "module": "commonjs",
     "moduleResolution": "node",
