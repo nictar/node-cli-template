@@ -2,14 +2,15 @@
   "name": "carbon-cli",
   "version": "0.0.1",
   "license": "MIT",
-  "scripts": {
-    "build": "yarn build:clean && yarn build:compile",
-    "build:compile": "tsc",
-    "build:clean": "rm -rf ./dist/"
-  },
+  "description": "Personal template for writing Node CLI projects in Typescript.",
   "author": "Nico Dinata <nicodnt@icloud.com>",
   "repository": "nictar/carbon-cli",
-  "description": "Personal template for writing Node CLI projects in Typescript.",
+  "scripts": {
+    "build": "yarn build:clean && yarn build:compile",
+    "build:clean": "rm -rf ./dist/",
+    "build:compile": "tsc",
+    "test": "ava"
+  },
   "keywords": [
     "cli",
     "template",
@@ -26,6 +27,7 @@
   "devDependencies": {
     "@types/react": "^17.0.8",
     "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "ava": "^3.15.0",
     "eslint": "^7.27.0",
     "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-plugin-import": "^2.22.0",
