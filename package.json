@@ -1,6 +1,6 @@
 {
   "name": "node-cli-template",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
   "description": "Personal template for writing Node CLI projects in Typescript.",
   "author": "Nico Dinata <nicodnt@icloud.com>",
