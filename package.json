@@ -1,26 +1,47 @@
 {
-  "name": "carbon-cli",
-  "version": "1.0.0",
-  "scripts": {
-    "build": "yarn build:clean && yarn build:compile",
-    "build:compile": "tsc",
-    "build:clean": "rm -rf ./dist/"
-  },
-  "description": "Personal template for writing Node CLI projects in Typescript.",
-  "repository": "nictar/carbon",
-  "author": "Nico Dinata <nicodnt@icloud.com>",
+  "name": "node-cli-template",
+  "version": "0.1.0",
   "license": "MIT",
+  "description": "Personal template for writing Node CLI projects in Typescript.",
+  "author": "Nico Dinata <nicodnt@icloud.com>",
+  "repository": "nictar/node-cli-template",
   "keywords": [
     "cli",
     "template",
     "typescript",
     "nodejs"
   ],
+  "scripts": {
+    "build": "yarn build:clean && yarn build:compile",
+    "build:clean": "rm -rf ./dist/",
+    "build:compile": "tsc",
+    "test": "ava",
+    "prepare": "npm run build"
+  },
+  "main": "dist/cli.js",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "execa": "^5.0.0",
+    "ink": "^3.0.8",
+    "ink-spinner": "^4.0.2",
+    "meow": "^10.0.0",
+    "react": "^17.0.2"
+  },
   "devDependencies": {
+    "@types/node": "^15.12.0",
+    "@types/react": "^17.0.8",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "ava": "^3.15.0",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-plugin-import": "^2.22.0",
     "import-sort-cli": "^6.0.0",
     "import-sort-parser-typescript": "^6.0.0",
     "import-sort-style-rn": "^1.1.6",
     "prettier": "2.2.1",
+    "ts-node": "^10.0.0",
     "typescript": "^4.2.4"
   },
   "importSort": {
@@ -32,5 +53,13 @@
       "parser": "typescript",
       "style": "rn"
     }
+  },
+  "ava": {
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
   }
 }

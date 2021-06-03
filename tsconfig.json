@@ -3,14 +3,14 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["es7", "DOM"],
+    "jsx": "react",
+    "lib": ["es2020", "dom"],
     "module": "commonjs",
     "moduleResolution": "node",
     "outDir": "dist",
-    "rootDir": "src",
     "skipLibCheck": true,
     "strict": true,
-    "target": "es6"
+    "target": "es2020"
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src"]
 }
