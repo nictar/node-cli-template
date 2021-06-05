@@ -19,7 +19,9 @@
     "test": "yarn lint && ava",
     "lint": "eslint \"src/**\" --ext .ts,.tsx"
   },
-  "main": "dist/cli.js",
+  "bin": {
+    "prog": "dist/cli.js"
+  },
   "files": [
     "dist"
   ],
